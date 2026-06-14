@@ -1,0 +1,161 @@
+.stage3 {
+    background: linear-gradien
+    (
+        135deg,
+        rgba(16,185,129,0.05),
+        rgba(5,150,105,0.03)
+    );
+    border: 1px solid rgba(16,185,129,0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(16,185,129,0.05);
+}
+
+
+/* Final Response Container */
+
+.final-response {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+
+/* Chairman Label */
+
+.chairman-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    padding: 8px 12px;
+    background: rgba(16,185,129,0.08);
+    border: 1px solid rgba(16,185,129,0.15);
+    border-radius: 999px;
+    color: #059669;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-family:
+        "JetBrains Mono",
+        "SF Mono",
+        monospace;
+}
+
+
+/* Final Answer Text */
+
+.final-text {
+    color: #1f2937;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+
+/* Markdown Headings */
+
+.final-text h1,
+.final-text h2,
+.final-text h3 {
+    color: #111827;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+
+/* Paragraphs */
+
+.final-text p {
+    margin-bottom: 14px;
+}
+
+
+/* Lists */
+
+.final-text ul,
+.final-text ol {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+
+.final-text li {
+    margin-bottom: 6px;
+}
+
+
+/* Inline Code */
+
+.final-text code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family:
+        "JetBrains Mono",
+        monospace;
+    font-size: 13px;
+}
+
+
+/* Code Blocks */
+
+.final-text pre {
+    background: #111827;
+    color: #f9fafb;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.final-text pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+
+/* Blockquotes */
+
+.final-text blockquote {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-left: 4px solid #10b981;
+    background: rgba(16,185,129,0.05);
+    color: #374151;
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* Tables */
+
+.final-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.final-text th,
+.final-text td {
+    border: 1px solid #e5e7eb;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.final-text th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+
+/* Links */
+
+.final-text a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.final-text a:hover {
+    text-decoration: underline;
+}

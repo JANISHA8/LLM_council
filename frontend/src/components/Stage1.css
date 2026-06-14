@@ -1,0 +1,175 @@
+.stage {
+    margin: 28px 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    animation: fadeIn 0.25s ease;
+}
+
+
+/* Stage Header */
+
+.stage-title {
+    margin: 0 0 20px 0;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* Tabs */
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Tab */
+
+.tab {
+    padding: 10px 18px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    background: rgba(99,102,241,0.08);
+    border-color: rgba(99,102,241,0.25);
+    color: #4f46e5;
+    transform: translateY(-1px);
+}
+
+
+/* Active Tab */
+
+.tab.active {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+    color: white;
+    border-color: transparent;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(99,102,241,0.25);
+}
+
+
+/* Content Card */
+
+.tab-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+
+/* Model Label */
+
+.model-name {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 6px 10px;
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.15);
+    border-radius: 999px;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 600;
+    font-family:
+        "SF Mono",
+        "JetBrains Mono",
+        monospace;
+}
+
+
+/* Response Text */
+
+.response-text {
+    color: #1f2937;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* Markdown Formatting */
+
+.response-text h1,
+.response-text h2,
+.response-text h3 {
+    color: #111827;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.response-text p {
+    margin-bottom: 12px;
+}
+
+.response-text ul,
+.response-text ol {
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
+
+.response-text li {
+    margin-bottom: 6px;
+}
+
+.response-text code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family:
+        "JetBrains Mono",
+        monospace;
+    font-size: 13px;
+}
+
+.response-text pre {
+    background: #111827;
+    color: #f9fafb;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.response-text pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+    from
+    {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

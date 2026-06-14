@@ -1,0 +1,272 @@
+:root {
+    /* Typography */
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Color System */
+    --bg-primary: #f9fafb;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --accent-primary: #6366f1;
+    --accent-secondary: #4f46e5;
+    --success: #10b981;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Page Layout */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Selection */
+
+::selection {
+    background: rgba(99,102,241,0.18);
+}
+
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+
+/* Markdown Content */
+
+.markdown-content {
+    padding: 8px;
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
+
+/* Paragraphs */
+
+.markdown-content p {
+    margin-bottom: 14px;
+}
+
+.markdown-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Headings */
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.markdown-content h1:first-child,
+.markdown-content h2:first-child,
+.markdown-content h3:first-child,
+.markdown-content h4:first-child,
+.markdown-content h5:first-child,
+.markdown-content h6:first-child {
+    margin-top: 0;
+}
+
+.markdown-content h1 {
+    font-size: 1.8rem;
+}
+
+.markdown-content h2 {
+    font-size: 1.5rem;
+}
+
+.markdown-content h3 {
+    font-size: 1.25rem;
+}
+
+
+/* Lists */
+
+.markdown-content ul,
+.markdown-content ol {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+
+.markdown-content li {
+    margin-bottom: 6px;
+}
+
+
+/* Tables */
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.markdown-content th,
+.markdown-content td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.markdown-content th {
+    background: #f3f4f6;
+    font-weight: 600;
+}
+
+
+/* Inline Code */
+
+.markdown-content code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family:
+        "JetBrains Mono",
+        "SF Mono",
+        monospace;
+    font-size: 0.9em;
+}
+
+
+/* Code Blocks */
+
+.markdown-content pre {
+    background: #111827;
+    color: #f9fafb;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.markdown-content pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+
+/* Blockquotes */
+
+.markdown-content blockquote {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-left: 4px solid var(--accent-primary);
+    background: rgba(99,102,241,0.05);
+    color: #4b5563;
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* Links */
+
+.markdown-content a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.markdown-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Horizontal Rule */
+
+.markdown-content hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 24px 0;
+}
+
+
+/* Images */
+
+.markdown-content img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 12px 0;
+}
+
+
+/* Smooth Animations */
+
+button,
+input,
+textarea {
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
